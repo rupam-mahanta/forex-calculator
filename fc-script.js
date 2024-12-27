@@ -7,7 +7,7 @@ const btn = document.querySelector("form button");
 const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
-const forexDate = document.querySelector("#forexDate");
+//const forexDate = document.querySelector("#forexDate");
 
 window.addEventListener("load", () => {
     updateExchangeRate();
@@ -68,8 +68,8 @@ const updateExchangeRate = async () => {
     let data = await response.json();
     //console.log(data);
     let rateDate = data["date"];
-    //console.log(rateDate);
-    forexDate.innerText = `* Forex Date: ${rateDate}`;
+    console.log(rateDate);
+    //forexDate.innerText = `* Forex Date: ${rateDate}`;
     //console.log(toCurr.value.toLowerCase());
     let rateArray = data[fromCurr.value.toLowerCase()];
     //console.log(rateArray);   
