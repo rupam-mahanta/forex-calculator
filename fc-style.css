@@ -5,7 +5,10 @@
 }
 
 body {
-    background-color: blanchedalmond;
+    background-color: black;    
+    background-image: URL("backgroundImage.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +16,7 @@ body {
 }
 
 .container {
-    background-color:rgb(56, 229, 245);
+    background-color:rgb(230, 237, 227);
     padding: 2rem;
     border-radius: 1rem;
     min-height: 45vh;
@@ -66,7 +69,7 @@ form button {
     height: 3rem;
     border-radius: .5rem;
     font-size: 1rem;
-    background-color: blue;
+    background-color: rgb(83, 84, 85);
     color: #fff;
     cursor: pointer;
 
@@ -78,5 +81,10 @@ form button {
     text-align: right;
     margin: 1rem 0 0rem 0;
 
+}
+
+h3 {
+    font-family: cursive;
+    
 }
 
